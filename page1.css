@@ -1,0 +1,116 @@
+body {
+    background-image: linear-gradient(120deg, #3e32a8, #e310c7);
+    font-family: 'PT Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin: 0; 
+    height: 100%; 
+    min-height: 100vh;
+
+}
+
+.grid-container {
+  display: grid;
+  width: 100vw;
+  color: #ffffff;
+}
+
+
+.title {
+  margin: 6vw; 
+  margin-bottom: 2vw;
+  font-size: 3vw;
+
+}
+
+
+.subtitle {
+  margin-left: 6vw;
+  margin-bottom: 1rem;
+  margin-top: 1vh;
+
+}
+
+ul {
+  margin-top: 0; /* This reduces space above the list, making it closer to the subtitle */
+  padding-left: 6vw; /* This aligns the list to the subtitle's margin */
+}
+
+.grid-container ul {
+  list-style-type: none; /* Removes the bullet points */
+
+}
+
+.grid-container li {
+  margin-bottom: 1rem; /* Adds space between list items */
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin: 2vh 5vw; /* Slightly smaller margins for smaller screens */
+    font-size: 1.5rem; 
+  }
+  .subtitle, ul {
+    margin-left: 4vw; /* Smaller side margins for mobile */
+  }
+
+  ul {
+    margin-top: 0.5rem; /* Less space on top for mobile */
+  }
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  text-transform: uppercase;
+  position: fixed; /* removed from the normal document flow */
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  }
+  
+  .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+  color: #2de0ff;
+  }
+  
+  .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  
+  /* navigation element */
+  
+  #main {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  padding-top: 2%;
+  margin-right: 3%;
+  font-size: 30px;
+  cursor: pointer;
+  
+  }
+  
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }

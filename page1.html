@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's make paper!</title>
+    <link rel="stylesheet" href="pages-css/page1.css">
+</head>
+<body>
+    <div class="grid-container">
+        <h1 class="title"> Materials </h1>
+        <p class="subtitle"> Gather materials to create paper pulp from recycled paper</p>
+
+        <ul> <!-- used to create a list where the order of items does not matter. All checkboxes share the same name="materials" attribute. --> 
+            <li><label><input type="checkbox" name="materials" value="container" /> A large container for holding water.</label></li>
+            <li><label><input type="checkbox" name="materials" value="sponge" /> A sponge to absorb excess moisture.</label></li>
+            <li><label><input type="checkbox" name="materials" value="cloth" /> Cloth sheets </label></li>
+            <li><label><input type="checkbox" name="materials" value="strainer" /> A kitchen strainer to help with the process.</label></li>
+            <li><label><input type="checkbox" name="materials" value="blender" /> Using a dedicated crafting blender. </label></li>
+            <li><label><input type="checkbox" name="materials" value="mold-deckle" /> A mold and deckle</label></li>
+        </ul>
+
+        <h1 class="title"> Alternatives </h1>
+        <ul>
+            <li><label><input type="checkbox" name="materials" value="cloth" /> Old bed sheets, tablecloths, or t-shirts.</label></li>
+            <li><label><input type="checkbox" name="materials" value="blender" /> A potato masher, a pestle and mortar, or just hands.</label></li>
+        </ul>
+
+
+
+    </div>
+
+<div class="sidenav">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html"> Home </a>
+        <a href="page1.html">*Step 1*</a>
+        <a href="page2.html">Step 2</a>
+        <a href="page3.html">Step 3</a>
+        <a href="page4.html">Step 4</a>
+      </div>
+    
+      <div id="main">
+        <span onclick="openNav()">&#9776; Menu</span>
+      </div>
+
+  <script src="pages-js/page1.js"> </script>  
+
+    
+</body>
+</html>

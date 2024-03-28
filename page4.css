@@ -1,0 +1,120 @@
+
+  body {
+    background-image: linear-gradient(120deg, #3e32a8, #e310c7);
+    font-family: 'PT Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin: 0; 
+    height: 100%; /* full viewport height */
+    min-height: 100vh;
+  
+  
+  }
+  .margin1 {
+    margin: 6vw; 
+    margin-bottom: 2vw;
+    font-size: 3vw;
+  
+  }
+
+
+  .subtitle {
+    margin-left: 6vw;
+    margin-bottom: 1rem;
+    margin-top: 1vh;
+    max-width: 70vw;
+    font-size: 1rem;
+  
+  
+  }
+
+  @media screen and (max-width: 768px) {
+    .margin1 {
+      font-size: 7vw; /* Increase font size for smaller screens */
+    }
+  }
+
+  .video {
+    height: auto;
+    width: 100%; /* Takes full width of its container */
+  }
+  
+  .video-frame {
+    margin-left: 3vw; /* Adjusts the video slightly to the left */
+    width: 560px; /* Width of the iframe */
+    height: 315px; /* Height of the iframe */
+  }
+  
+  
+  .grid-container {
+    display: grid;
+    width: 100vw;
+    color: #ffffff;
+  }
+  
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: auto;
+  
+  }
+  
+
+  
+  
+  /* navigation style */
+  
+  .sidenav {
+  height: 100%;
+  width: 0;
+  text-transform: uppercase;
+  position: fixed; /* removed from the normal document flow */
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  }
+  
+  .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+  color: #2de0ff;
+  }
+  
+  .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  
+  /* navigation element */
+  
+  #main {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  padding-top: 2%;
+  margin-right: 3%;
+  font-size: 30px;
+  cursor: pointer;
+  
+  }
+  
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
